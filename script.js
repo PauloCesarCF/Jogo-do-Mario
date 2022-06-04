@@ -27,8 +27,8 @@ const loop = setInterval(() => {
         mario.style.bottom = `${marioPosition}px`;
 
         mario.src = 'assets/imgs/game-over.png';
-        mario.style.width = '75px';
-        mario.style.marginLeft = '30px';
+        mario.style.width = '70px';
+        mario.style.marginLeft = '35px';
 
         cloud.style.animation = 'none';
         cloud.style.left = `${cloudPosition}px`;
@@ -40,3 +40,4 @@ const loop = setInterval(() => {
 }, 10);
 
 document.addEventListener('keydown', jump);
+document.addEventListener('touchstart', jump);
